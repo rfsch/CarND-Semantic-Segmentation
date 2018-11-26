@@ -3,7 +3,7 @@
 ### Introduction
 
 In this project I have developed a Fully Convolutional Network (FCN) which semantically segmented images from [the Kitti Road dataset](
-http://www.cvlibs.net/download.php?file=data_road.zip) into road and non-road segments.
+http://www.cvlibs.net/download.php?file=data_road.zip) into street and non-street segments.
 
 ## Project Info
 To see the FCN implementation you can have a look at `main.py` in my CarND-Semantic-Segmentation repository.
