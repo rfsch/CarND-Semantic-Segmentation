@@ -35,7 +35,8 @@ These are the hyperparameters I used:
 ### Results
 Loss consistently dropped over the course of the 30 epochs, going from an average of 0.30 in epoch 1 to an average of 0.01 in epoch 30. You can see some of the pictures that have been semantically segmented below:
 
-![Sample 1](https://github.com/rfsch/CarND-Semantic-Segmentation/edit/master/output/um_000015.png?raw=true "Sample 1")
+![Sample 1](https://github.com/rfsch/CarND-Semantic-Segmentation/blob/master/out/um_000021.png?raw=true "Sample 1")
+![Sample 2](https://github.com/rfsch/CarND-Semantic-Segmentation/blob/master/out/um_000060.png?raw=true "Sample 2")
 ### Conclusion
 
 The FCN was able to achieve consistently good results and most of the time correctly segmented streets against non-streets. 
