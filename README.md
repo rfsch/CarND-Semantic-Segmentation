@@ -11,6 +11,31 @@ To see the FCN implementation you can have a look at `main.py` in my CarND-Seman
 ## Overview
 The goal of the project was to implement a Fully Convolutional Network (FCN) using the VGG-16 image classifier architecture to semantically segment(street vs. non-street in images).
 
+## Architecture
+I used the pre-trained VGG-16 network provided by Udacity and converted it to a Fully Convolutional Network. I replaced the last fully connected layer with a one-by-one convolution and set the depth to the number of classes required.
+
+I have used two skip connections, one-by-one convolutions on layers before and upsampled as a last step. 
+
+### Optimization Paramters
+
+Loss function: Cross-entropy
+Optimizer:     Adam optimizer
+
+### Training
+
+These are the hyperparameters I used:
+
+|  Input          |    MSE   |
+|  -----          |  ------- |
+|  keep_prob:     |  0.5     |  
+|  learning_rate  |  1e-4    |
+|  epochs         |  30      |
+|  batch_size     |  8       |
+
+### Results
+Loss consistently dropped over the course of the 30 epochs, going from an average of 0.30 in epoch 1 to an average of 0.01 in epoch 30. You can see some of the pictures that have been semantically segmented below:
+
+![Sample 1](https://github.com/rfsch/CarND-Semantic-Segmentation/edit/master/output/um_000015.png?raw=true "Sample 1")
 ### Conclusion
 
 The FCN was able to achieve consistently good results and most of the time correctly segmented streets against non-streets. 
